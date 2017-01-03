@@ -9,4 +9,4 @@ RUN npm install --silent
 COPY . /usr/src/app
 
 EXPOSE 3000
-CMD [ "node", "app" ]
+CMD [ "node", "bin/www" ]
