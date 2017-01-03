@@ -48,15 +48,7 @@ app.use(function(err, req, res, next) {
 function onInit() {
   var sourcePath = '/Users/Ankush/projects/test/';
   var targetPath='/Users/Ankush/projects/target/';
-  fs.watch(sourcePath, (eventType, filename) => {
-    fse.copy(sourcePath,targetPath,function (err) {
-    if(err){
-      fs.unlink(targetPath + filename)
-      return  console.error(err)
-    }
     console.log("Done",eventType)
-  });
-})
 }
 
 exports.onInit = onInit();
