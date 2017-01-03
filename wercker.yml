@@ -34,3 +34,13 @@ build:
         code: node app.js
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
+
+# The container definition we want to use for developing our app
+box: node:4.2.6-slim
+# Defining the dev pipeline
+dev:
+  steps:
+    - npm-install
+    - internal/watch:
+        code: node app.js
+        reload: true
