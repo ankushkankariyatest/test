@@ -48,7 +48,7 @@ app.use(function(err, req, res, next) {
 function onInit() {
   var sourcePath = '/Users/Ankush/projects/test/';
   var targetPath='/Users/Ankush/projects/target/';
-    console.log("Done",eventType)
+    console.log("Done")
 }
 
 exports.onInit = onInit();
