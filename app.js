@@ -45,13 +45,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-function onInit() {
-  var sourcePath = '/Users/Ankush/projects/test/';
-  var targetPath='/Users/Ankush/projects/target/';
-    console.log("Done")
-}
-
-exports.onInit = onInit();
-
-
 module.exports = app;
